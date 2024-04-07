@@ -10,6 +10,7 @@
     "cover:report": "nyc report --reporter=lcov --reporter=text",
     "lint": "eslint '*/**/*.ts'",
     "prepare": "npm run build",
+    "benchmark": "tsc benchmark.ts && node benchmark.js",
     "semantic-release": "semantic-release --branches main"
   },
   "files": [
@@ -47,11 +48,13 @@
   "homepage": "https://github.com/subhamg/unique-username-generator#readme",
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
+    "@types/benchmark": "^2.1.5",
     "@types/chai": "^4.3.1",
     "@types/mocha": "^9.1.1",
     "@types/node": "^17.0.33",
     "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.23.0",
+    "benchmark": "^2.1.4",
     "chai": "^4.3.6",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.15.0",
